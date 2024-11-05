@@ -8,7 +8,7 @@ import NavFooter from './components/NavFooter.vue';
     <NavBar/>
   </header>
 
-  <main class="pt-20 pb-10 bg-black">
+  <main class="pt-20 pb-10 bg-neutral-900">
     <RouterView></RouterView>
   </main>
 
