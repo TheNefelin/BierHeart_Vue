@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-black p-4 mt-5 flex justify-center gap-10">
+  <footer class="relative z-10 footer bg-black p-4 mt-5 flex justify-center gap-10">
     <a class="cursor-pointer hover:scale-110 transition-transform duration-300" target="_blank" href="https://www.facebook.com/BierHeartChile/?locale=es_LA">
       <img class="h-14" src="@/assets/images/facebook.png">
     </a>
@@ -11,7 +11,7 @@
     </a>
   </footer>
 
-  <footer class="footer bg-neutral text-neutral-content p-10">
+  <footer class="relative z-10 footer bg-neutral text-neutral-content p-10">
     <label class="m-auto">COPYRIGHT © 2023 BIERHEART</label>
   </footer>
 </template>

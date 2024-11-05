@@ -1,5 +1,13 @@
+<script setup>
+const props = defineProps(
+  {msge: String}
+)
+</script>
+
 <template>
-  <h1 class="p-4 text-center text-neutral-content shadow-red-700 text-4xl sm:text-6xl hover:text-red-100">EVENTOS</h1>
+  <h1 class="p-4 text-center text-neutral-content shadow-red-700 text-4xl sm:text-6xl hover:text-red-100">
+    {{ props.msge }}
+  </h1>
 </template>
 
 <style scoped>
