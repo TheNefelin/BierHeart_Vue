@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Banner from '@/components/Banner.vue';
 import Titles from '@/components/Titles.vue';
 import Youtube from '@/components/Youtube.vue';
