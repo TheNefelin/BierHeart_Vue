@@ -1,13 +1,18 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
   <nav class="fixed z-20 flex justify-around navbar bg-black text-neutral-content shadow-red-700 shadow-xl">
-    <a class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
+    <RouterLink to="/" class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
       <img class="h-12 hidden md:block" src="@/assets/images/logo.png"/>
-      Bier Heart
-    </a>
-    <a class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
+      Home
+    </RouterLink>
+
+    <RouterLink to="/history" class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
       <img class="h-12 hidden md:block" src="@/assets/images/diablo-skull.png"/>
       Historia
-    </a>
+    </RouterLink>
     <a class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
       <img class="h-12 hidden md:block" src="@/assets/images/thunder-skull.png"/>
       Media

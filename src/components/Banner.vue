@@ -1,5 +1,5 @@
 <template>
-    <section class="relative pt-20">
+  <section class="relative">
     <img class="w-full h-auto" src="@/assets/images/band.jpg">
 
     <section class="absolute bottom-[-60px] w-full">
@@ -8,5 +8,6 @@
         <img class="h-32 sm:h-48 md:h-80 hover:scale-110 transition-transform duration-300" src="@/assets/images/bier_heart_3.png" alt="bier heart">
       </div>
     </section>
+
   </section>
 </template>
