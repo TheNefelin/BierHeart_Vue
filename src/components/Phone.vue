@@ -25,7 +25,7 @@
         <div class="display">
           <div class="artboard artboard-demo phone-1">
             <h1>ULTIMO EVENTO</h1>
-            <img src="@/assets/images/event_01.jpg">
+            <img src="@/assets/images/event_01.webp">
           </div>
         </div>
       </div>

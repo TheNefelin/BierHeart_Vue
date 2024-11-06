@@ -5,7 +5,7 @@ import Return from '@/components/Return.vue';
 </script>
 
 <template>
-  <img class="fixed w-full h-full object-cover opacity-5 top-0 z-0" src="@/assets/images//background.webp">
+  <img class="fixed w-full h-full object-cover opacity-10 z-0" src="@/assets/images//background.webp">
 
   <Titles class="mt-5 z-10" msge="Un Viaje de Conexión, Evolución y Metal"/>
 
