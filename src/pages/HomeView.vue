@@ -8,7 +8,7 @@ import Return from '@/components/Return.vue';
 
 <template>
   <Banner/>
-  <Titles class="mt-20" msge="EVENTOS"/>
+  <Titles class="mt-20" msge="Eventos"/>
   <Youtube class="px-4"/>
   <Phone/>
   <Return/>

@@ -13,10 +13,10 @@ import { RouterLink } from 'vue-router';
       <img class="h-12 hidden md:block" src="@/assets/images/ico_02.webp"/>
       Historia
     </RouterLink>
-    <a class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
+    <RouterLink to="/media" class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
       <img class="h-12 hidden md:block" src="@/assets/images/ico_03.webp"/>
       Media
-    </a>
+    </RouterLink>
     <a class="btn btn-ghost text-lg sm:text-xl hover:text-red-100">
       <img class="h-12 hidden md:block" src="@/assets/images/ico_04.webp"/>
       Tienda

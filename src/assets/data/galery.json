@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "imgs": [
+      { "img": "gal_01.webp", "alt": "gal_01" },
+      { "img": "gal_11.webp", "alt": "gal_11" },
+      { "img": "gal_03.webp", "alt": "gal_03" }
+    ]
+  },
+  {
+    "id": 2,
+    "imgs": [
+      { "img": "gal_18.webp", "alt": "gal_18" },
+      { "img": "gal_05.webp", "alt": "gal_05" },
+      { "img": "gal_06.webp", "alt": "gal_06" }
+    ]
+  },
+  {
+    "id": 3,
+    "imgs": [
+      { "img": "gal_07.webp", "alt": "gal_07" },
+      { "img": "gal_20.webp", "alt": "gal_20" },
+      { "img": "gal_09.webp", "alt": "gal_09" }
+    ]
+  },
+  {
+    "id": 4,
+    "imgs": [
+      { "img": "gal_10.webp", "alt": "gal_10" },
+      { "img": "gal_02.webp", "alt": "gal_02" },
+      { "img": "gal_12.webp", "alt": "gal_12" }
+    ]
+  },
+  {
+    "id": 5,
+    "imgs": [
+      { "img": "gal_13.webp", "alt": "gal_13" },
+      { "img": "gal_14.webp", "alt": "gal_14" },
+      { "img": "gal_08.webp", "alt": "gal_08" }
+    ]
+  },
+  {
+    "id": 6,
+    "imgs": [
+      { "img": "gal_16.webp", "alt": "gal_16" },
+      { "img": "gal_17.webp", "alt": "gal_17" }
+    ]
+  },
+  {
+    "id": 7,
+    "imgs": [
+      { "img": "gal_19.webp", "alt": "gal_19" }
+    ]
+  },
+  {
+    "id": 8,
+    "imgs": [
+      { "img": "gal_04.webp", "alt": "gal_04" },
+      { "img": "gal_15.webp", "alt": "gal_15" }
+    ]
+  }
+]
