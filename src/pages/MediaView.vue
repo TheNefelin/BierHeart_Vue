@@ -1,5 +1,6 @@
 <script setup>
 import Titles from '@/components/Titles.vue';
+import Return from '@/components/Return.vue';
 
 import { ref, onMounted } from 'vue'
 import data from '@/assets/data/galery.json'
@@ -12,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Titles class="mt-10" msge="Media"/>
+  <Titles class="mt-5" msge="Media"/>
 
   <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-4">
     <div v-for="(item, index) in items" :key="index" class="grid gap-4">
@@ -103,4 +104,6 @@ onMounted(() => {
       </div>
     </div>    
   </div>
+
+  <Return/>
 </template>
