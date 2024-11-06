@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Titles class="mt-5" msge="Media"/>
+  <Titles class="mt-5" msge="Galería del Rock and Roll"/>
 
   <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-4">
     <div v-for="(item, index) in items" :key="index" class="grid gap-4">
@@ -26,7 +26,7 @@ onMounted(() => {
     </div>
   </div> -->
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-4">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-4 my-6">
     <div class="grid gap-4">
       <div>
         <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_01.webp" alt="">
