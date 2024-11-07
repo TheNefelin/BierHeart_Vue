@@ -17,7 +17,7 @@ import Titles from '@/components/Titles.vue';
   </section>
 
   <section class="flex flex-wrap gap-6 justify-center mt-10 max-w-screen-xl m-auto">
-    <div class="card glass w-56 text-neutral-content">
+  <div class="card glass w-56 text-neutral-content">
     <figure>
       <img
         src="@/assets/images/tienda_01.webp"
@@ -62,6 +62,50 @@ import Titles from '@/components/Titles.vue';
       <p>Polera Satanica Bier Heart 1.0</p>
     </div>
   </div>
+  <div class="card glass w-56 text-neutral-content">
+    <figure>
+      <img
+        src="@/assets/images/tienda_01.webp"
+        alt="car!" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">12.000 CLP</h2>
+      <p>Polera Satanica Bier Heart 1.0</p>
+    </div>
+  </div>
+  <div class="card glass w-56 text-neutral-content">
+    <figure>
+      <img
+        src="@/assets/images/tienda_02.webp"
+        alt="car!" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">12.000 CLP</h2>
+      <p>Polera Satanica Bier Heart 1.0</p>
+    </div>
+  </div>
+  <div class="card glass w-56 text-neutral-content">
+    <figure>
+      <img
+        src="@/assets/images/tienda_03.webp"
+        alt="car!" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">12.000 CLP</h2>
+      <p>Polera Satanica Bier Heart 1.0</p>
+    </div>
+  </div>
+  <div class="card glass w-56 text-neutral-content">
+    <figure>
+      <img
+        src="@/assets/images/tienda_04.webp"
+        alt="car!" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">12.000 CLP</h2>
+      <p>Polera Satanica Bier Heart 1.0</p>
+    </div>
+  </div>  
   <div class="card glass w-56 text-neutral-content">
     <figure>
       <img
