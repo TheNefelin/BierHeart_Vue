@@ -1,5 +1,6 @@
 <script setup>
 import Titles from '@/components/Titles.vue';
+import Return from '@/components/Return.vue';
 </script>
 
 <template>
@@ -141,4 +142,5 @@ import Titles from '@/components/Titles.vue';
   </div>
   </section>
 
+  <Return/>
 </template>
