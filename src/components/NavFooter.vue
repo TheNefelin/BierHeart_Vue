@@ -13,8 +13,8 @@
 
   <footer class="relative z-10 footer bg-neutral text-neutral-content p-10">
     <label class="m-auto flex">
-      BIERHEART ©2024
-      <span>|</span>
+      © {{new Date().getFullYear()}}
+      <span> | </span>
       <a class=" cursor-pointer" target="_blank" href="https://www.francisco-dev.cl/">francisco-dev.cl</a>
     </label>
   </footer>
