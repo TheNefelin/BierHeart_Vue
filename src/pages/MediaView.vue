@@ -1,98 +1,42 @@
 <script setup>
 import Titles from '@/components/Titles.vue';
 import Return from '@/components/Return.vue';
+import gallery from '@/data/gallery.json'
+import { ref } from 'vue'
 
-import { ref, onMounted } from 'vue'
-import data from '@/assets/data/galery.json'
+const selectedImage = ref(null)
 
-const items = ref([]);
-
-onMounted(() => {
-  items.value = data;
-});
+function openModal(imgUrl) {
+  selectedImage.value = imgUrl
+  document.getElementById('image_modal').showModal()
+}
 </script>
 
 <template>
   <Titles class="mt-5" msge="Galería del Rock and Roll"/>
 
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-4 my-6">
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_01.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_11.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_03.webp" alt="">
+    <div v-for="item in gallery" :key="item.idGrp" class="grid gap-4">
+      <div v-for="pic in item.imgGrp" :key="pic.id">
+        <img :src="pic.img" @click="openModal(pic.img)" alt="img" class="h-auto max-w-full rounded-lg hover:cursor-pointer">
       </div>
     </div>
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_18.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_05.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_06.webp" alt="">
-      </div>
-    </div>
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_07.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_20.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_09.webp" alt="">
-      </div>
-    </div>
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_10.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_02.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_12.webp" alt="">
-      </div>
-    </div>
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_13.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_14.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_08.webp" alt="">
-      </div>
-    </div>
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_16.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_17.webp" alt="">
-      </div>
-    </div>  
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_19.webp" alt="">
-      </div>
-    </div>    
-    <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_04.webp" alt="">
-      </div>
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="@/assets/images/gal_15.webp" alt="">
-      </div>
-    </div>    
   </div>
+
+  <dialog id="image_modal" class="modal">
+    <div class="modal-box relative p-1 rounded-none">
+
+      <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-2xl text-white">✕</button>
+      </form>
+
+      <img v-if="selectedImage" :src="selectedImage" class="w-auto h-auto" alt="imagen ampliada" />
+    </div>
+
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
 
   <Return/>
 </template>

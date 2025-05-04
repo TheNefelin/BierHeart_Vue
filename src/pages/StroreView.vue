@@ -1,6 +1,15 @@
 <script setup>
 import Titles from '@/components/Titles.vue';
 import Return from '@/components/Return.vue';
+import store from '@/data/store.json'
+import { ref } from 'vue'
+
+const selectedImage = ref(null)
+
+function openModal(imgUrl) {
+  selectedImage.value = imgUrl
+  document.getElementById('image_modal').showModal()
+}
 </script>
 
 <template>
@@ -18,129 +27,31 @@ import Return from '@/components/Return.vue';
   </section>
 
   <section class="flex flex-wrap gap-6 justify-center mt-10 max-w-screen-xl m-auto">
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_01.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
+    <div v-for="item in store" :key="item.id" class="card glass w-56 text-neutral-content">
+      <figure>
+        <img :src="item.img" :alt="item.description" @click="openModal(item.img)" class=" cursor-pointer"/>
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">{{ item.price.toLocaleString('es-CL') }} {{ item.currency }}</h2>
+        <p>{{ item.description }}</p>
+      </div>
     </div>
-  </div>
-
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_02.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_03.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_04.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_01.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_02.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_03.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_04.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>  
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_05.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_06.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
-  <div class="card glass w-56 text-neutral-content">
-    <figure>
-      <img
-        src="@/assets/images/tienda_07.webp"
-        alt="car!" />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">12.000 CLP</h2>
-      <p>Polera Satanica Bier Heart 1.0</p>
-    </div>
-  </div>
   </section>
+
+  <dialog id="image_modal" class="modal">
+    <div class="modal-box relative p-1 rounded-none">
+
+      <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-2xl">✕</button>
+      </form>
+
+      <img v-if="selectedImage" :src="selectedImage" class="w-auto h-auto" alt="imagen ampliada" />
+    </div>
+
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
 
   <Return/>
 </template>

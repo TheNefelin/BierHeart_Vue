@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "price": 12000,
+    "currency": "CLP",
+    "description": "Polera Bier Heart A1",
+    "img": "/img/store/store_01.webp"
+  },
+  {
+    "id": 2,
+    "price": 12000,
+    "currency": "CLP",
+    "description": "Polera Bier Heart A2",
+    "img": "/img/store/store_02.webp"
+  },
+  {
+    "id": 3,
+    "price": 12000,
+    "currency": "CLP",
+    "description": "Polera Bier Heart A3",
+    "img": "/img/store/store_03.webp"
+  },
+  {
+    "id": 4,
+    "price": 12000,
+    "currency": "CLP",
+    "description": "Polera Bier Heart A4",
+    "img": "/img/store/store_04.webp"
+  }
+]

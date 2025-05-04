@@ -1,0 +1,62 @@
+[
+  {
+    "idGrp": 1,
+    "imgGrp": [
+      { "id": 1, "img": "/img/gallery/gal_01.webp" },
+      { "id": 2, "img": "/img/gallery/gal_02.webp" },
+      { "id": 3, "img": "/img/gallery/gal_03.webp" }
+    ]
+  },
+  {
+    "idGrp": 2,
+    "imgGrp": [
+      { "id": 4, "img": "/img/gallery/gal_04.webp" },
+      { "id": 5, "img": "/img/gallery/gal_05.webp" },
+      { "id": 6, "img": "/img/gallery/gal_06.webp" }
+    ]
+  },
+  {
+    "idGrp": 3,
+    "imgGrp": [
+      { "id": 7, "img": "/img/gallery/gal_07.webp" },
+      { "id": 8, "img": "/img/gallery/gal_08.webp" },
+      { "id": 9, "img": "/img/gallery/gal_09.webp" }
+    ]
+  },
+  {
+    "idGrp": 4,
+    "imgGrp": [
+      { "id": 10, "img": "/img/gallery/gal_10.webp" },
+      { "id": 11, "img": "/img/gallery/gal_11.webp" },
+      { "id": 12, "img": "/img/gallery/gal_12.webp" }
+    ]
+  },
+  {
+    "idGrp": 5,
+    "imgGrp": [
+      { "id": 13, "img": "/img/gallery/gal_13.webp" },
+      { "id": 14, "img": "/img/gallery/gal_14.webp" },
+      { "id": 15, "img": "/img/gallery/gal_15.webp" }
+    ]
+  },
+  {
+    "idGrp": 6,
+    "imgGrp": [
+      { "id": 16, "img": "/img/gallery/gal_16.webp" },
+      { "id": 17, "img": "/img/gallery/gal_17.webp" }
+    ]
+  },
+  {
+    "idGrp": 7,
+    "imgGrp": [
+      { "id": 18, "img": "/img/gallery/gal_18.webp" }
+    ]
+  },
+  {
+    "idGrp": 8,
+    "imgGrp": [
+      { "id": 19, "img": "/img/gallery/gal_19.webp" },
+      { "id": 20, "img": "/img/gallery/gal_20.webp" }   
+    ]
+  }
+]
