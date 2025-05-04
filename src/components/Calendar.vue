@@ -16,17 +16,12 @@ function openModal(imgUrl) {
     <li class="p-4 pb-2 text-xs tracking-wide">Fechas de Tocatas y Conciertos</li>
 
     <li
-      v-for="(event, index) in events"
-      :key="index"
-      class="bg-gradient-to-b from-red-900 to-black flex flex-col sm:flex-row items-center sm:items-center gap-4 p-4 m-2 text-center sm:text-left rounded-lg"
-    >
-      <!-- Fecha (columna 1, fija o pequeña) -->
+      v-for="(event, index) in events" :key="index" class="bg-gradient-to-b from-red-900 to-black flex flex-col sm:flex-row items-center sm:items-center gap-4 p-4 m-2 text-center sm:text-left rounded-lg" >
       <div class="text-4xl font-thin opacity-70 tabular-nums sm:text-right">
         <div>{{ event.date }}</div>
         <div class="text-sm">{{ event.time }}</div>
       </div>
 
-      <!-- Imagen (columna 2, tamaño fijo) -->
       <div class="flex justify-center">
         <img
           class="h-48 object-contain cursor-pointer"
@@ -36,7 +31,6 @@ function openModal(imgUrl) {
         />
       </div>
 
-      <!-- Contenido (columna 3, ocupa el resto) -->
       <div class="flex-1 sm:self-stretch sm:flex sm:flex-col sm:justify-center">
         <div class="font-semibold text-lg">{{ event.club }}</div>
         <div class="text-xs uppercase font-semibold opacity-60">{{ event.place }}</div>

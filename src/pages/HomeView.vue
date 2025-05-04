@@ -12,6 +12,7 @@
   <Titles class="mt-20" msge="Eventos"/>
   <Youtube class="px-4"/>
   <Phone/>
+  <Titles class="mt-5" msge="Calendario"/>
   <Calendar/>
   <Return/>
 </template>
