@@ -15,17 +15,6 @@ onMounted(() => {
 <template>
   <Titles class="mt-5" msge="Galería del Rock and Roll"/>
 
-  <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-4">
-    <div v-for="(item, index) in items" :key="index" class="grid gap-4">
-      <div v-for="(el, elIndex) in item.imgs" :key="elIndex">
-        <img 
-          :src="`/images/${el.img}`" 
-          :alt="el.alt"
-          class="h-auto max-w-full rounded-lg">
-      </div>
-    </div>
-  </div> -->
-
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-4 my-6">
     <div class="grid gap-4">
       <div>

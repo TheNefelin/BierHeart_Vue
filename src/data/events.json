@@ -1,0 +1,82 @@
+[
+  {
+    "id": 8,
+    "date": "2017-12-09",
+    "time": "22:00",
+    "img": "/img/events/event_20250502.webp",
+    "club": "El Huevo",
+    "place": "Calle Blanco #1386",
+    "tiket": "Entrada via PassLine",
+    "details": "🔥 Evento +18"
+  },
+  {
+    "id": 7,
+    "date": "2025-05-02",
+    "time": "22:00",
+    "img": "/img/events/event_20241027.webp",
+    "club": "El Huevo",
+    "place": "Calle Blanco #1386",
+    "tiket": "Entrada via PassLine",
+    "details": ""
+  },
+  {
+    "id": 6,
+    "date": "2024-02-02",
+    "time": "22:00",
+    "img": "/img/events/event_20240202.webp",
+    "club": "Club Segundo Piso",
+    "place": "Av Brasil #1395",
+    "tiket": "Entrada Liberada",
+    "details": "🔥 Evento Solidario"
+  },
+  {
+    "id": 5,
+    "date": "2024-01-20",
+    "time": "12:00",
+    "img": "/img/events/event_20240120.webp",
+    "club": "En el Bosque 6",
+    "place": "Camino Laguna Verde Paradero Santa Rosa",
+    "tiket": "Entrada $ 1.000 General",
+    "details": ""
+  },
+  {
+    "id": 4,
+    "date": "2023-06-18",
+    "time": "11:00",
+    "img": "/img/events/event_20230618.webp",
+    "club": "En el Bosque 6",
+    "place": "Camino Laguna Verde Paradero Santa Rosa",
+    "tiket": "Entrada $ 3.000 General",
+    "details": "🔥 Evento Solidario"
+  },
+  {
+    "id": 3,
+    "date": "2022-01-29",
+    "time": "12:00",
+    "img": "/img/events/event_20220129.webp",
+    "club": "En el Bosque 6",
+    "place": "Camino Laguna Verde Paradero Santa Rosa",
+    "tiket": "Invitacion",
+    "details": "🔥 Evento Privado"
+  },
+  {
+    "id": 2,
+    "date": "2018-10-12",
+    "time": "22:00",
+    "img": "/img/events/event_20181012.webp",
+    "club": "Ele Bar",
+    "place": "General Cruz #335",
+    "tiket": "Preventa $ 2000 - General $ 3000",
+    "details": ""
+  },
+  {
+    "id": 1,
+    "date": "2017-12-09",
+    "time": "22:00",
+    "img": "/img/events/event_20171209.webp",
+    "club": "Keops",
+    "place": "Esmeralda #335",
+    "tiket": "Entrada $ 1.500 General",
+    "details": ""
+  }
+]

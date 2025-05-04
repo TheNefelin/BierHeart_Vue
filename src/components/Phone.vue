@@ -9,7 +9,7 @@
         </div>
       </div>
       <div class="chat chat-end">
-        <div class="chat-bubble">Lamentablemente no tenemos fecha Aun</div>
+        <div class="chat-bubble">Mantente Atento a las Fechas del Calendario</div>
       </div>
       <div class="chat chat-end">
         <div class="chat-bubble">Por mientras!!!</div>
@@ -23,9 +23,9 @@
       <div class="mockup-phone">
         <div class="camera"></div>
         <div class="display">
-          <div class="artboard artboard-demo phone-1">
-            <h1>ULTIMO EVENTO</h1>
-            <img src="@/assets/images/event_01.webp">
+          <div class="artboard artboard-demo phone-1 p-2">
+            <h1>PROXIMO EVENTO</h1>
+            <img src="/img/card.png">
           </div>
         </div>
       </div>

@@ -23,15 +23,6 @@ const router = createRouter({
   scrollBehavior(){
     return { top: 0 };
   }
-  // scrollBehavior(to, from, savedPosition) {
-  //   if (savedPosition) {
-  //     // Regresa a la posición guardada si existe
-  //     return savedPosition;
-  //   } else {
-  //     // Desplazarse al inicio de la página para cada nueva navegación
-  //     return { top: 0 };
-  //   }
-  // }
 })
 
 const app = createApp(App);
